@@ -1,3 +1,5 @@
+* {outline:solid 1px #f1f1f1}
+
 body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
@@ -10,18 +12,18 @@ body {
 h1 {
   font-family: "Big River Script", Helvetica, Arial, sans-serif;
   text-decoration-color: #353C47;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
   margin-bottom:5px;
   line-height: 1.2;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   margin-bottom:5px;
   line-height: 1.2;
@@ -37,7 +39,7 @@ a {
   color: #353C47;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: .75rem;
 }
 
 a:active {
@@ -50,71 +52,183 @@ a:active {
 
 .navbar {
   display: grid;
-  grid-template-columns: 8fr 1fr 1fr 1fr 1fr;
-  vertical-align: baseline;
-  padding-left: 2vw;
-  padding-top: 30px;
-  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.navbar-link {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 20px 40px;
+  align-self: center;
+  grid-gap: 40px;
+}
+
+.logo {
+  display: inline;
+  align-self: center;
+}
+
+.current {
+  color: #B85B4F;
 }
 
 .hero-content {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1;
-  align-items: center;
-  padding-left: 7vw;
-  padding-right: 7vw;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding: 50px 0;
+  margin: auto;
 }
 
+/*.hero-content {
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}*/
+
 .intro {
-  width: 600px;
+  margin: auto;
+  width: 450px;
+  align-self: center;
+}
+
+.hero-content.intro-image {
+  width: 80vw;
+  height: auto;
 }
 
 .projects h1 {
   margin: auto;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .project-overview {
+  margin: auto;
+}
+
+/*.project-overview {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding-right: 10vw;
-  padding-left: 10vw;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 50px;
   grid-gap: 30px;
   text-align: left;
+  margin: auto;
+  max-width: 900px;
+}*/
+
+.project-overview-desc {
+  padding: 0 100px;
 }
 
 .project-overview-desc h2 {
+  position: relative;
+  padding: 12px 0;
+}
+
+.project-overview-desc h2::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: -15%;
+  top: -1%;
   background-image: url("../assets/images/pawprints_wash.png");
-  background-position: center;
-  background-size: auto;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .project-overview-desc h3 {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   line-height: 1.5;
+}
+
+.case-study-link a {
+  position: relative;
+  padding: 15px 10px;
+}
+
+.case-study-link a::before {
+  position: absolute;
+  content: "";
+  width: 120%;
+  height: 120%;
+  left: -10%;
+  top: 10%;
+  background-image: url("../assets/images/casestudy_button.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .see-more {
   margin: auto;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  position: relative;
+  padding: 25px 0;
+}
+
+.see-more a::before {
+  position: absolute;
+  align-self: center;
+  content: "";
+  width: 150%;
+  height: 175%;
+  left: -25%;
+  background-image: url("../assets/images/see_more_projects.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact h1 {
+  padding: 50px 0;
+  align-self: center;
 }
 
 .contact {
   margin: auto;
 }
 
-.contact h1 {
-  padding-bottom: 50px;
-}
-
 footer {
   padding-left: 2vw;
   padding-top: 50px;
   padding-bottom: 30px;
+}
+
+@media (min-width: 600px) {
+
+  .navbar {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    grid-gap: 40px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .project-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    grid-gap: 30px;
+    text-align: left;
+    margin: auto;
+    max-width: 900px;
+  }
+
 }
