@@ -96,10 +96,16 @@ a:active {
   margin: auto;
 }
 
-.intro {
+.bio h1{
   margin: auto;
-  width: 325px;
-  align-self: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.bio p{
+  margin: auto;
+  width: 250px;
+  padding-bottom: 200px;
 }
 
 .full {
@@ -112,100 +118,6 @@ a:active {
 
 .mobile {
   display: grid;
-  margin: auto;
-}
-
-.projects h1 {
-  margin: auto;
-  padding: 30px 0;
-}
-
-.project-overview {
-  margin: auto;
-}
-
-.project-overview-desc {
-  padding: 0 100px;
-}
-
-.project-overview-desc h2 {
-  position: relative;
-  padding: 12px 10px;
-}
-
-.project-overview-desc h2::before {
-  position: absolute;
-  content: "";
-  width: 120%;
-  height: 120%;
-  left: -15%;
-  top: -5%;
-  background-image: url("../assets/images/pawprints_wash.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.project-overview-desc h3 {
-  padding-top: 10px;
-  padding-bottom: 30px;
-  line-height: 1.5;
-}
-
-.case-study-link a {
-  position: relative;
-  padding: 10px 10px;
-}
-
-.case-study-link a::before {
-  position: absolute;
-  content: "";
-  width: 120%;
-  height: 120%;
-  left: -10%;
-  top: 5%;
-  background-image: url("../assets/images/casestudy_button.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.see-more {
-  margin: auto;
-  padding: 75px 0;
-}
-
-.see-more a{
-    color: #B85B4F;
-    position: relative;
-    padding: 10px 10px
-
-}
-
-.see-more a::before {
-  position: absolute;
-  align-self: center;
-  content: "";
-  width: 150%;
-  height: 150%;
-  left: -30%;
-  top: 1%;
-  background-image: url("../assets/images/see_more_projects.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.contact {
-  margin: auto;
-}
-
-.contact h1 {
-  padding: 50px 10px;
-  align-self: center;
-}
-
-.contact-icon {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-self: center;
 }
 
 footer {
@@ -259,14 +171,10 @@ footer {
       margin: 10px;
   }
 
-  .intro {
+  .bio p{
     margin: auto;
-    width: 450px;
-    align-self: center;
-  }
-
-  .intro-image {
-    margin: auto;
+    width: 400px;
+    padding-bottom: 200px;
   }
 
   .mobile {
@@ -279,23 +187,6 @@ footer {
 
   .full {
     display: none;
-  }
-
-  .projects h1 {
-    margin: auto;
-    padding: 50px 0;
-  }
-
-  .project-overview {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 50px;
-    text-align: left;
-    margin: auto;
-    max-width: 900px;
   }
 
 }
@@ -323,13 +214,10 @@ footer {
     padding-bottom: 50px;
   }
 
-  .projects h1 {
+  .bio p{
     margin: auto;
-    padding: 75px 0;
-  }
-
-  .project-overview {
-    margin: auto;
+    width: 700px;
+    padding-bottom: 200px;
   }
 
 }

@@ -96,12 +96,6 @@ a:active {
   margin: auto;
 }
 
-.intro {
-  margin: auto;
-  width: 325px;
-  align-self: center;
-}
-
 .full {
   display: none;
 }
@@ -117,15 +111,12 @@ a:active {
 
 .projects h1 {
   margin: auto;
-  padding: 30px 0;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .project-overview {
   margin: auto;
-}
-
-.project-overview-desc {
-  padding: 0 100px;
 }
 
 .project-overview-desc h2 {
@@ -145,10 +136,9 @@ a:active {
   background-size: contain;
 }
 
-.project-overview-desc h3 {
-  padding-top: 10px;
-  padding-bottom: 30px;
-  line-height: 1.5;
+.description {
+  padding: 20px 0;
+  width: 250px;
 }
 
 .case-study-link a {
@@ -166,46 +156,6 @@ a:active {
   background-image: url("../assets/images/casestudy_button.png");
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.see-more {
-  margin: auto;
-  padding: 75px 0;
-}
-
-.see-more a{
-    color: #B85B4F;
-    position: relative;
-    padding: 10px 10px
-
-}
-
-.see-more a::before {
-  position: absolute;
-  align-self: center;
-  content: "";
-  width: 150%;
-  height: 150%;
-  left: -30%;
-  top: 1%;
-  background-image: url("../assets/images/see_more_projects.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.contact {
-  margin: auto;
-}
-
-.contact h1 {
-  padding: 50px 10px;
-  align-self: center;
-}
-
-.contact-icon {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-self: center;
 }
 
 footer {
@@ -259,16 +209,6 @@ footer {
       margin: 10px;
   }
 
-  .intro {
-    margin: auto;
-    width: 450px;
-    align-self: center;
-  }
-
-  .intro-image {
-    margin: auto;
-  }
-
   .mobile {
     display: none;
   }
@@ -283,7 +223,8 @@ footer {
 
   .projects h1 {
     margin: auto;
-    padding: 50px 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
   }
 
   .project-overview {
@@ -295,7 +236,12 @@ footer {
     padding-bottom: 50px;
     text-align: left;
     margin: auto;
-    max-width: 900px;
+    max-width: 700px;
+  }
+
+  .description {
+    padding: 20px 0;
+    width: 300px;
   }
 
 }
@@ -312,20 +258,6 @@ footer {
 
   .full {
     display: block;
-  }
-
-  .hero-content {
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .projects h1 {
-    margin: auto;
-    padding: 75px 0;
   }
 
   .project-overview {
