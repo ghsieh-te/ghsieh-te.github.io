@@ -199,7 +199,7 @@ footer {
 
   h1 {
     font-family: "Big River Script", Helvetica, Arial, sans-serif;
-    text-decoration-color: #353C47;
+    color: #353C47;
     font-size: 40px;
   }
 
@@ -224,11 +224,11 @@ footer {
   }
 
   .navbar {
-      display: grid;
-      grid-template-columns: 1fr;
-      padding: 0 30px;
-      padding-top: 30px;
-      align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 30px;
+    padding-top: 30px;
+    align-items: center;
   }
 
   .logo {
@@ -236,8 +236,8 @@ footer {
   }
 
   .menu a {
-      padding: 5px;
-      margin: 10px;
+    padding: 5px;
+    margin: 10px;
   }
 
   .mobile {
