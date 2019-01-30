@@ -2,7 +2,7 @@
 
 body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  text-decoration-color: #353C47;
+  color: #353C47;
 }
 
 @font-face {
@@ -12,7 +12,7 @@ body {
 
 h1 {
   font-family: "Big River Script", Helvetica, Arial, sans-serif;
-  text-decoration-color: #353C47;
+  color: #353C47;
   font-size: 30px;
 }
 
@@ -69,6 +69,13 @@ a:active {
 
 .logo {
   margin: auto;
+  display: inline;
+  align-self: center;
+}
+
+.logo img {
+  width: 133px;
+  height: auto;
 }
 
 .menu {
@@ -83,18 +90,18 @@ a:active {
     margin: auto;
 }
 
-.logo {
-  display: inline;
-  align-self: center;
-}
-
 .current {
   color: #B85B4F;
 }
 
 .hero-content {
-  padding: 50px 0;
+  padding: 30px 0;
   margin: auto;
+}
+
+.hero-content img {
+  max-width: 100%;
+  height: auto;
 }
 
 .full {
@@ -120,17 +127,24 @@ a:active {
   margin: auto;
 }
 
+.features-image img {
+  max-width: 100%;
+  height: auto;
+  min-width: 175px;
+}
+
 .project-overview-desc h2 {
   position: relative;
   padding: 12px 10px;
+  left: -5%;
 }
 
 .project-overview-desc h2::before {
   position: absolute;
   content: "";
-  width: 120%;
-  height: 120%;
-  left: -15%;
+  width: 100%;
+  height: 100%;
+  left: -5%;
   top: -5%;
   background-image: url("../assets/images/pawprints_wash.png");
   background-repeat: no-repeat;
@@ -145,6 +159,7 @@ a:active {
 .case-study-link a {
   position: relative;
   padding: 10px 10px;
+  left: 5%;
 }
 
 .case-study-link a::before {
@@ -159,13 +174,28 @@ a:active {
   background-size: contain;
 }
 
+.contact {
+  margin: auto;
+}
+
+.contact h1 {
+  padding: 50px 10px;
+  align-self: center;
+}
+
+.contact-icon {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-self: center;
+}
+
 footer {
   padding-left: 5vw;
   padding-top: 100px;
   padding-bottom: 30px;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 400px) {
 
   h1 {
     font-family: "Big River Script", Helvetica, Arial, sans-serif;
@@ -195,14 +225,14 @@ footer {
 
   .navbar {
       display: grid;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr;
       padding: 0 30px;
       padding-top: 30px;
       align-items: center;
   }
 
   .logo {
-    margin-left: 0;
+    margin: auto;
   }
 
   .menu a {
@@ -233,21 +263,20 @@ footer {
     grid-template-columns: auto auto;
     align-items: center;
     padding-right: 20px;
-    padding-left: 20px;
     padding-bottom: 50px;
+    grid-gap: 20px;
     text-align: left;
     margin: auto;
-    max-width: 700px;
   }
 
   .description {
     padding: 20px 0;
-    width: 300px;
+    width: 225px;
   }
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 800px) {
 
   .mobile {
     display: none;
@@ -259,6 +288,18 @@ footer {
 
   .full {
     display: block;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .navbar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      padding: 0 30px;
+      padding-top: 30px;
+      align-items: center;
   }
 
   .project-overview {

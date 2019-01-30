@@ -2,7 +2,7 @@
 
 body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  text-decoration-color: #353C47;
+  color: #353C47;
 }
 
 @font-face {
@@ -12,7 +12,7 @@ body {
 
 h1 {
   font-family: "Big River Script", Helvetica, Arial, sans-serif;
-  text-decoration-color: #353C47;
+  color: #353C47;
   font-size: 30px;
 }
 
@@ -32,7 +32,6 @@ h4 {
 
 p {
   font-size: 12px;
-  line-height: 19px;
   font-weight: normal;
 }
 
@@ -62,6 +61,13 @@ a:active {
 
 .logo {
   margin: auto;
+  display: inline;
+  align-self: center;
+}
+
+.logo img {
+  width: 133px;
+  height: auto;
 }
 
 .menu {
@@ -74,11 +80,6 @@ a:active {
 .menu a {
     padding: 5px;
     margin: auto;
-}
-
-.logo {
-  display: inline;
-  align-self: center;
 }
 
 .current {
@@ -100,6 +101,7 @@ a:active {
   margin: auto;
   width: 250px;
   padding-bottom: 50px;
+  line-height: 1.5;
 }
 
 .full {
@@ -114,13 +116,28 @@ a:active {
   display: grid;
 }
 
+.contact {
+  margin: auto;
+}
+
+.contact h1 {
+  padding: 50px 10px;
+  align-self: center;
+}
+
+.contact-icon {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-self: center;
+}
+
 footer {
   padding-left: 5vw;
   padding-top: 100px;
   padding-bottom: 30px;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 400px) {
 
   h1 {
     font-family: "Big River Script", Helvetica, Arial, sans-serif;
@@ -150,14 +167,14 @@ footer {
 
   .navbar {
       display: grid;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr;
       padding: 0 30px;
       padding-top: 30px;
       align-items: center;
   }
 
   .logo {
-    margin-left: 0;
+    margin: auto;
   }
 
   .menu a {
@@ -167,7 +184,7 @@ footer {
 
   .bio p{
     margin: auto;
-    width: 400px;
+    width: 375px;
     padding-bottom: 50px;
   }
 
@@ -185,7 +202,7 @@ footer {
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 800px) {
 
   .mobile {
     display: none;
@@ -197,6 +214,18 @@ footer {
 
   .full {
     display: block;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .navbar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      padding: 0 30px;
+      padding-top: 30px;
+      align-items: center;
   }
 
   .hero-content {
