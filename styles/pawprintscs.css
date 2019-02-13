@@ -204,7 +204,7 @@ a:active {
   height: auto;
 }
 
-.logo-guidelines {
+/**.logo-guidelines {
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding-bottom: 30px;
@@ -246,7 +246,7 @@ a:active {
   border: 1px solid #053782;
   height: 200px;
   width: 200px;
-}
+}**/
 
 .palette {
   display: grid;
@@ -299,7 +299,7 @@ a:active {
 .font p{
   font-family: "SF Pro Text", Helvetica, Arial, sans-serif;
   color: #353C47;
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -320,6 +320,22 @@ a:active {
   height: 300px;
   box-shadow: 5px 10px 18px #D1D1D1;
 }**/
+
+.before-after img{
+  display: grid;
+  margin: auto;
+  height: 250px;
+  width: auto;
+  padding-bottom: 20px;
+}
+
+.before-afterv2 img{
+  display: grid;
+  margin: auto;
+  height: 300px;
+  width: auto;
+  padding-bottom: 20px;
+}
 
 .preftest {
   display: grid;
@@ -423,7 +439,7 @@ footer {
 
   .description h1 {
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
   .description p {
