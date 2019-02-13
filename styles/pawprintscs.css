@@ -10,21 +10,26 @@ body {
   src: url('../assets/big_river_script.otf') format('woff2');
 }
 
+@font-face {
+  font-family: "SF Pro Text";
+  src: url('../assets/SF-Pro-Display-Regular.otf') format('woff2');
+}
+
 h1 {
   font-family: "Big River Script", Helvetica, Arial, sans-serif;
   color: #353C47;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   margin-bottom:5px;
   line-height: 1.2;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   margin-bottom:5px;
   line-height: 1.2;
@@ -86,32 +91,48 @@ a:active {
 }
 
 .menu a {
-    padding: 5px;
-    margin: auto;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
 }
 
 .current {
   color: #B85B4F;
 }
 
-.hero-content {
+.container .hero-content {
+  display: grid;
+  grid-template-columns: 1fr;
   padding: 50px 0;
   margin: auto;
 }
 
 .intro {
+  display: grid;
   margin: auto;
-  width: 325px;
-  align-self: center;
 }
 
 .intro h2 {
   line-height: 1.5;
+  text-align: center;
+  max-width: 250px;
+  margin: auto;
+}
+
+.intro img {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  padding-bottom: 20px;
 }
 
 .intro-image img {
+  display: grid;
+  margin: auto;
   max-width: 100%;
   height: auto;
+  width: 75vw;
+  align-self: center;
 }
 
 .full {
@@ -135,12 +156,184 @@ a:active {
   margin: auto;
   text-align: center;
   padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 .description p {
   margin: auto;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   width: 250px;
+}
+
+.research a {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 100;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.competitor-image {
+  display: grid;
+  margin: auto;
+  height: 40px;
+  width: auto;
+  padding-bottom: 30px;
+}
+
+.process img{
+  display: grid;
+  width: 60vw;
+  height: auto;
+  max-width: 225px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.logo-design img{
+  display: grid;
+  width: 60vw;
+  height: auto;
+  max-width: 225px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.logo-design .final-logo {
+  width: 300px;
+  height: auto;
+}
+
+.logo-guidelines {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-bottom: 30px;
+}
+
+.logo-example img {
+  width: 150px;
+  height: auto;
+  margin: auto;
+}
+
+.logo-example h4 {
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.icon-example h4 {
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.icon-example img {
+  width: 50px;
+  height: auto;
+  margin: auto;
+}
+
+.light-background {
+  background-size: 200px 200px;
+  background: #FFFFFF;
+  border: 1px solid #353C47;
+}
+
+.dark-background {
+  display: grid;
+  background: #053782;
+  border: 1px solid #053782;
+  height: 200px;
+  width: 200px;
+}
+
+.palette {
+  display: grid;
+  margin: auto;
+  grid-template-columns: auto auto auto;
+  padding-bottom: 30px;
+}
+
+.palette h3 {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+
+.individual_color_1 {
+  border: 1px solid #053782;
+  background-color: #053782;
+}
+
+.individual_color_1 h3 {
+  color: #FFFFFF;
+}
+
+.individual_color_2 {
+  border: 1px solid #3F6BAD;
+  background-color: #3F6BAD;
+}
+
+.individual_color_3 {
+  border: 1px solid #BAC8DC;
+  background-color: #BAC8DC;
+}
+
+.individual_color_4 {
+  border: 1px solid #353C47;
+  background-color: #FFFFFF;
+}
+
+.individual_color_5 {
+  border: 1px solid #4C4C4C;
+  background-color: #4C4C4C;
+}
+
+.individual_color_6 {
+  border: 1px solid #737373;
+  background-color: #737373;
+}
+
+.font p{
+  font-family: "SF Pro Text", Helvetica, Arial, sans-serif;
+  color: #353C47;
+  font-size: 28px;
+  text-align: center;
+}
+
+/**.design-mockups.before-after {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+.before-after p {
+  text-align: center;
+}
+
+.design-mockups img {
+  margin: auto;
+  width: auto;
+  height: 300px;
+  box-shadow: 5px 10px 18px #D1D1D1;
+}**/
+
+.preftest {
+  display: grid;
+  margin: auto;
+  grid-template-columns:  auto auto;
+  grid-gap: 10px;
+  padding-bottom: 40px;
+}
+
+.testing img {
+  margin: auto;
+  width: auto;
+  height: 300px;
+  box-shadow: 5px 10px 18px #D1D1D1;
 }
 
 .contact {
@@ -169,11 +362,11 @@ footer {
   h1 {
     font-family: "Big River Script", Helvetica, Arial, sans-serif;
     color: #353C47;
-    font-size: 40px;
+    font-size: 35px;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: normal;
     margin-bottom:5px;
     line-height: 1.2;
@@ -207,20 +400,48 @@ footer {
   .menu a {
       padding: 5px;
       margin: 10px;
+      text-align: center;
   }
 
   .intro {
     margin: auto;
-    width: 450px;
     align-self: center;
+  }
+
+  .intro img {
+    width: 60%;
+    height: auto;
+  }
+
+  .intro h2 {
+    max-width: 375px;
   }
 
   .intro-image {
     margin: auto;
   }
 
+  .description h1 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
   .description p {
     width: 375px;
+  }
+
+  .research a {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 100;
+  }
+
+  .process img{
+    max-width: 300px;
+  }
+
+  .logo-design img{
+    max-width: 300px;
   }
 
   .mobile {
@@ -263,17 +484,40 @@ footer {
     align-items: center;
   }
 
-  .hero-content {
-    grid-template-columns: 1fr auto;
+  .container .hero-content {
+    grid-template-columns: auto auto;
+    margin: auto;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    grid-gap:20px;
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
+  .intro h2 {
+    text-align: left;
+  }
+
+  .intro img {
+    width: 80%;
+    height: auto;
+  }
+
+  .intro-image img {
+    max-width: 100%;
+    height: auto;
+    width: 50vw;
+  }
+
   .description p {
     width: 700px;
+  }
+
+  .process img{
+    max-width: 600px;
+  }
+
+  .logo-design img{
+    max-width: 600px;
   }
 
 }

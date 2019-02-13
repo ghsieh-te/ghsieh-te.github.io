@@ -13,18 +13,18 @@ body {
 h1 {
   font-family: "Big River Script", Helvetica, Arial, sans-serif;
   color: #353C47;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   margin-bottom:5px;
   line-height: 1.2;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   margin-bottom:5px;
   line-height: 1.2;
@@ -88,6 +88,7 @@ a:active {
 .menu a {
     padding: 5px;
     margin: auto;
+    text-align: center;
 }
 
 .current {
@@ -101,7 +102,7 @@ a:active {
 
 .intro {
   margin: auto;
-  width: 325px;
+  width: 320px;
   align-self: center;
 }
 
@@ -153,9 +154,9 @@ a:active {
 .project-overview-desc h2::before {
   position: absolute;
   content: "";
-  width: 120%;
-  height: 120%;
-  left: -5%;
+  width: 90%;
+  height: 90%;
+  left: -10%;
   top: -5%;
   background-image: url("../assets/images/pawprints_wash.png");
   background-repeat: no-repeat;
@@ -237,11 +238,11 @@ footer {
   h1 {
     font-family: "Big River Script", Helvetica, Arial, sans-serif;
     color: #353C47;
-    font-size: 40px;
+    font-size: 35px;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
     margin-bottom:5px;
     line-height: 1.2;
@@ -275,11 +276,12 @@ footer {
   .menu a {
       padding: 5px;
       margin: 10px;
+      text-align: center;
   }
 
   .intro {
     margin: auto;
-    width: 450px;
+    width: 390px;
     align-self: center;
   }
 
@@ -313,6 +315,11 @@ footer {
       text-align: left;
       grid-gap: 30px;
       margin: auto;
+    }
+
+    .project-overview-desc h2::before {
+      width: 120%;
+      height: 120%;
     }
 
 }

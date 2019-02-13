@@ -13,18 +13,18 @@ body {
 h1 {
   font-family: "Big River Script", Helvetica, Arial, sans-serif;
   color: #353C47;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   margin-bottom:5px;
   line-height: 1.2;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   margin-bottom:5px;
   line-height: 1.2;
@@ -88,6 +88,7 @@ a:active {
 .menu a {
     padding: 5px;
     margin: auto;
+    text-align: center;
 }
 
 .current {
@@ -200,11 +201,11 @@ footer {
   h1 {
     font-family: "Big River Script", Helvetica, Arial, sans-serif;
     color: #353C47;
-    font-size: 40px;
+    font-size: 35px;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
     margin-bottom:5px;
     line-height: 1.2;
@@ -238,6 +239,7 @@ footer {
   .menu a {
     padding: 5px;
     margin: 10px;
+    text-align: center;
   }
 
   .mobile {
