@@ -51,7 +51,7 @@ a {
 }
 
 a:active {
-  color: #B85B4F;
+  color: #AE6060;
 }
 
 .container {
@@ -91,8 +91,12 @@ a:active {
     text-align: center;
 }
 
+.menu a:hover {
+  color: #AE6060
+}
+
 .current {
-  color: #B85B4F;
+  color: #AE6060;
 }
 
 .hero-content {
@@ -169,7 +173,24 @@ a:active {
   line-height: 1.5;
 }
 
-.case-study-link a {
+.case-study-link a{
+  display: block;
+  text-align: center;
+  width: 175px;
+  background: none;
+  border: 1px solid #AE6060;
+  color: #AE6060;
+  padding: 10px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.case-study-link a:hover{
+  background: #AE6060;
+  color: #ffffff;
+}
+
+/*.case-study-link a {
   position: relative;
   padding: 10px 10px;
   left: 10%
@@ -185,15 +206,33 @@ a:active {
   background-image: url("../assets/images/casestudy_button.png");
   background-repeat: no-repeat;
   background-size: contain;
-}
+}*/
 
 .see-more {
   margin: auto;
-  padding: 75px 0;
+  padding: 50px 0;
 }
 
 .see-more a{
-    color: #B85B4F;
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 225px;
+  background: none;
+  border: 1px solid #353C47;
+  color: #353C47;
+  padding: 10px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.see-more a:hover{
+  background: #353C47;
+  color: #ffffff;
+}
+
+/*.see-more a{
+    color: #AE6060;
     position: relative;
     padding: 10px 10px
 
@@ -210,7 +249,7 @@ a:active {
   background-image: url("../assets/images/see_more_projects.png");
   background-repeat: no-repeat;
   background-size: contain;
-}
+}*/
 
 .contact {
   margin: auto;
@@ -225,6 +264,11 @@ a:active {
   display: grid;
   grid-template-columns: auto auto;
   align-self: center;
+}
+
+.contact-icon a:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
 }
 
 footer {

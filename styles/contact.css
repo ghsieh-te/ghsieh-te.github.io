@@ -51,7 +51,7 @@ a {
 }
 
 a:active {
-  color: #B85B4F;
+  color: #AE6060;
 }
 
 .container {
@@ -91,8 +91,12 @@ a:active {
     text-align: center;
 }
 
+.menu a:hover {
+  color: #AE6060
+}
+
 .current {
-  color: #B85B4F;
+  color: #AE6060;
 }
 
 .hero-content {
@@ -139,12 +143,13 @@ textarea {
 }
 
 input[type=submit] {
+  display: block;
   margin: auto;
   text-align: center;
   width: 175px;
   background: none;
-  border: 1px solid #B85B4F;
-  color: #B85B4F;
+  border: 1px solid #AE6060;
+  color: #AE6060;
   font-size: 15px;
   padding: 10px;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
@@ -152,7 +157,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background: #B85B4F;
+  background: #AE6060;
   color: #ffffff;
 }
 
@@ -238,8 +243,8 @@ footer {
   }
 
   input[type=submit] {
-    /*margin: auto;*/
-    display: block;
+    /*margin: auto;
+    display: block;*/
     width: 200px;
     /*background: none;
     border: 1px solid #B85B4F;

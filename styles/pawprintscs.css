@@ -56,7 +56,7 @@ a {
 }
 
 a:active {
-  color: #B85B4F;
+  color: #AE6060;
 }
 
 .container {
@@ -96,8 +96,12 @@ a:active {
   text-align: center;
 }
 
+.menu a:hover {
+  color: #AE6060
+}
+
 .current {
-  color: #B85B4F;
+  color: #AE6060;
 }
 
 .container .hero-content {
@@ -309,6 +313,11 @@ a:active {
   display: grid;
   grid-template-columns: auto auto;
   align-self: center;
+}
+
+.contact-icon a:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
 }
 
 footer {
