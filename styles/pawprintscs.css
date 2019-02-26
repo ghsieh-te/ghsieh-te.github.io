@@ -66,7 +66,6 @@ a:active {
 .navbar {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0 30px;
     padding-top: 30px;
     grid-gap: 30px;
     align-items: center;
@@ -125,7 +124,7 @@ a:active {
 
 .intro img {
   margin: auto;
-  width: 50%;
+  max-width: 50%;
   height: auto;
   padding-bottom: 20px;
 }
@@ -165,20 +164,38 @@ a:active {
 
 .description p {
   margin: auto;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  width: 250px;
+}
+
+.description h3 {
+  margin: auto;
+  padding-bottom: 20px;
+  width: 250px;
+}
+
+.pro-con-overview {
+  padding: 20px;
+  background-color: #E0E0E0;
+  margin-bottom: 30px;
   width: 250px;
 }
 
 .pro-con p{
   margin: auto;
   max-width: 225px;
+  padding-bottom: 0;
 }
 
 .pro-con {
   display: grid;
   margin: auto;
   grid-template-columns: 1fr;
-  padding: 5px 0;
+  grid-row-gap: 20px;
+}
+
+.con {
+  color: #762D23;
 }
 
 .research a {
@@ -199,24 +216,24 @@ a:active {
 
 .process img{
   display: grid;
-  width: 225px;
+  max-width: 275px;
   height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   margin: auto;
 }
 
 .logo-design img{
   display: grid;
-  width: 225px;
+  max-width: 275px;
   height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   margin: auto;
 }
 
 .logo-design .final-logo {
-  width: 200px;
+  max-width: 200px;
   height: auto;
-  padding-top: 30px;
+  padding: 30px 0;
 }
 
 .palette {
@@ -280,23 +297,23 @@ a:active {
   display: grid;
   margin: auto;
   height: auto;
-  width: 200px;
-  padding-bottom: 20px;
+  max-width: 200px;
+  padding-bottom: 30px;
 }
 
 .before-afterv2 img{
   display: grid;
   margin: auto;
   height: auto;
-  width: 225px;
-  padding-bottom: 20px;
+  max-width: 225px;
+  padding-bottom: 30px;
 }
 
 .preftest img{
   display: grid;
   margin: auto;
   height: auto;
-  width: 225px;
+  max-width: 225px;
   padding-bottom: 20px;
 }
 
@@ -313,6 +330,10 @@ a:active {
   display: grid;
   grid-template-columns: auto auto;
   align-self: center;
+}
+
+.contact-icon a{
+  transition: .2s all;
 }
 
 .contact-icon a:hover {
@@ -357,7 +378,6 @@ footer {
   .navbar {
       display: grid;
       grid-template-columns: 1fr;
-      padding: 0 30px;
       padding-top: 30px;
       align-items: center;
   }
@@ -367,7 +387,7 @@ footer {
   }
 
   .logo-design .final-logo {
-    width: 300px;
+    max-width: 300px;
     height: auto;
     padding-top: 30px;
   }
@@ -384,7 +404,7 @@ footer {
   }
 
   .intro img {
-    width: 60%;
+    max-width: 60%;
     height: auto;
   }
 
@@ -398,11 +418,19 @@ footer {
 
   .description h1 {
     padding-bottom: 30px;
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   .description p {
     width: 375px;
+  }
+
+  .description h3 {
+    width: 375px;
+  }
+
+  .statement {
+    font-size: 17px;
   }
 
   .research a {
@@ -411,16 +439,23 @@ footer {
     font-weight: 100;
   }
 
+  .pro-con-overview {
+    padding: 30px;
+    background-color: #EFEFEF;
+    margin-bottom: 20px;
+    width: 400px;
+  }
+
   .pro-con p{
     max-width: 325px;
   }
 
   .process img{
-    width: 300px;
+    max-width: 400px;
   }
 
   .logo-design img{
-    width: 300px;
+    max-width: 400px;
   }
 
   .palette {
@@ -443,17 +478,17 @@ footer {
 
   .before-after img{
     height: auto;
-    width: 300px;
+    max-width: 300px;
   }
 
   .before-afterv2 img{
     height: auto;
-    width: 300px;
+    max-width: 300px;
   }
 
   .preftest img{
     height: auto;
-    width: 300px;
+    max-width: 300px;
   }
 
   .mobile {
@@ -485,13 +520,12 @@ footer {
   }
 
   .logo {
-    margin-left: 0;
+    margin-left: 20px;
   }
 
   .navbar {
     display: grid;
     grid-template-columns: 1fr auto;
-    padding: 0 30px;
     padding-top: 30px;
     align-items: center;
   }
@@ -510,7 +544,8 @@ footer {
   }
 
   .intro img {
-    width: 80%;
+    margin-left: 0;
+    max-width: 80%;
     height: auto;
   }
 
@@ -524,19 +559,32 @@ footer {
     width: 700px;
   }
 
+  .description h3 {
+    width: 700px;
+  }
+
   .process img{
-    width: 600px;
+    max-width: 750px;
+    padding-bottom: 30px;
+  }
+
+  .pro-con-overview {
+    width: 725px;
+  }
+
+  .pro-con p{
+    padding-bottom: 0;
   }
 
   .pro-con {
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 1fr;
-    padding: 5px 0;
+    padding: 10px 0;
   }
 
   .logo-design img{
-    width: 600px;
+    max-width: 750px;
   }
 
   .palette {
@@ -554,17 +602,17 @@ footer {
   }
 
   .before-after img{
-    height: 250px;
-    width: auto;
+    height: auto;
+    max-width: 600px;
   }
 
   .before-afterv2 img{
-    height: 300px;
+    max-height: 300px;
     width: auto;
   }
 
   .preftest img{
-    height: 300px;
+    max-height: 300px;
     width: auto;
   }
 

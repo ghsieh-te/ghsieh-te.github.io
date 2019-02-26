@@ -61,7 +61,6 @@ a:active {
 .navbar {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0 30px;
     padding-top: 30px;
     grid-gap: 30px;
     align-items: center;
@@ -178,35 +177,19 @@ a:active {
   text-align: center;
   width: 175px;
   background: none;
-  border: 1px solid #AE6060;
+  border: 2px solid #AE6060;
   color: #AE6060;
   padding: 10px;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  transition: 1s all;
 }
 
 .case-study-link a:hover{
   background: #AE6060;
   color: #ffffff;
+  transition: 1s all;
 }
-
-/*.case-study-link a {
-  position: relative;
-  padding: 10px 10px;
-  left: 10%
-}
-
-.case-study-link a::before {
-  position: absolute;
-  content: "";
-  width: 120%;
-  height: 120%;
-  left: -10%;
-  top: 5%;
-  background-image: url("../assets/images/casestudy_button.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}*/
 
 .see-more {
   margin: auto;
@@ -224,32 +207,14 @@ a:active {
   padding: 10px;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  transition: 1s all;
 }
 
 .see-more a:hover{
   background: #353C47;
   color: #ffffff;
+  transition: 1s all;
 }
-
-/*.see-more a{
-    color: #AE6060;
-    position: relative;
-    padding: 10px 10px
-
-}
-
-.see-more a::before {
-  position: absolute;
-  align-self: center;
-  content: "";
-  width: 150%;
-  height: 150%;
-  left: -30%;
-  top: 1%;
-  background-image: url("../assets/images/see_more_projects.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}*/
 
 .contact {
   margin: auto;
@@ -264,6 +229,10 @@ a:active {
   display: grid;
   grid-template-columns: auto auto;
   align-self: center;
+}
+
+.contact-icon a{
+  transition: .2s all;
 }
 
 .contact-icon a:hover {
@@ -308,7 +277,6 @@ footer {
   .navbar {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0 30px;
     padding-top: 30px;
     align-items: center;
   }
@@ -383,13 +351,12 @@ footer {
   }
 
   .logo {
-    margin-left: 0;
+    margin-left: 20px;
   }
 
   .navbar {
     display: grid;
     grid-template-columns: 1fr auto;
-    padding: 0 30px;
     padding-top: 30px;
     align-items: center;
   }
