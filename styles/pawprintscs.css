@@ -138,6 +138,30 @@ a:active {
   align-self: center;
 }
 
+.prototype-link {
+  margin: auto;
+  padding-top: 30px;
+}
+
+.prototype-link a{
+  display: block;
+  text-align: center;
+  width: 150px;
+  background: none;
+  border: 2px solid #AE6060;
+  color: #AE6060;
+  padding: 10px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  transition: 1s all;
+}
+
+.prototype-link a:hover{
+  background: #AE6060;
+  color: #FFFFFF;
+  transition: 1s all;
+}
+
 .full {
   display: none;
 }
@@ -553,6 +577,14 @@ footer {
     max-width: 100%;
     height: auto;
     width: 50vw;
+  }
+
+  .prototype-link {
+    margin-left: 0;
+  }
+
+  .prototype-link a{
+    width: 175px;
   }
 
   .description p {
