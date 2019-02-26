@@ -91,14 +91,15 @@ a:active {
 }
 
 .hero-content {
-  padding: 50px 0;
+  padding: 50px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .bio h1{
   margin: auto;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .bio p{

@@ -99,8 +99,9 @@ a:active {
 }
 
 .hero-content {
-  padding: 40px 0;
+  padding: 50px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .hero-content img {

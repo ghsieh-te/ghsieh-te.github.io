@@ -99,8 +99,9 @@ a:active {
 }
 
 .hero-content {
-  padding: 30px 0;
+  padding: 50px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .hero-content img {
@@ -134,7 +135,16 @@ a:active {
 .features-image img {
   max-width: 100%;
   height: auto;
-  min-width: 175px;
+  /*min-width: 175px;*/
+}
+
+.features-image img{
+  transition: .2s all;
+}
+
+.features-image img:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
 }
 
 .project-overview-desc h2 {
@@ -146,9 +156,9 @@ a:active {
 .project-overview-desc h2::before {
   position: absolute;
   content: "";
-  width: 100%;
-  height: 100%;
-  left: -5%;
+  width: 90%;
+  height: 90%;
+  left: -10%;
   top: -5%;
   background-image: url("../assets/images/pawprints_wash.png");
   background-repeat: no-repeat;
@@ -163,7 +173,7 @@ a:active {
 .case-study-link a{
   display: block;
   text-align: center;
-  width: 175px;
+  width: 150px;
   background: none;
   border: 2px solid #AE6060;
   color: #AE6060;
@@ -276,7 +286,6 @@ footer {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    padding-right: 20px;
     padding-bottom: 50px;
     grid-gap: 20px;
     text-align: left;
@@ -317,6 +326,10 @@ footer {
 
   .project-overview {
     margin: auto;
+  }
+
+  .case-study-link a{
+    width: 175px;
   }
 
 }

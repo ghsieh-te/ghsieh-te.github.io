@@ -133,7 +133,7 @@ a:active {
 
 .projects h1 {
   margin: auto;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .project-overview {
@@ -145,7 +145,16 @@ a:active {
 .features-image img {
   max-width: 100%;
   height: auto;
-  min-width: 200px;
+  /*min-width: 200px;*/
+}
+
+.features-image img{
+  transition: .2s all;
+}
+
+.features-image img:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
 }
 
 .project-overview-desc h2 {
@@ -175,7 +184,7 @@ a:active {
 .case-study-link a{
   display: block;
   text-align: center;
-  width: 175px;
+  width: 150px;
   background: none;
   border: 2px solid #AE6060;
   color: #AE6060;
@@ -322,7 +331,6 @@ footer {
       display: grid;
       grid-template-columns: auto auto;
       align-items: center;
-      padding-right: 50px;
       padding-bottom: 50px;
       text-align: left;
       grid-gap: 30px;
@@ -330,8 +338,8 @@ footer {
     }
 
     .project-overview-desc h2::before {
-      width: 120%;
-      height: 120%;
+      width: 100%;
+      height: 100%;
     }
 
 }
@@ -377,6 +385,10 @@ footer {
 
   .project-overview {
     margin: auto;
+  }
+
+  .case-study-link a{
+    width: 175px;
   }
 
 }
