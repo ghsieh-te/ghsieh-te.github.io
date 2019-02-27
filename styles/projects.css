@@ -80,7 +80,7 @@ a:active {
 .menu {
   display: grid;
   margin: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
 }
 
@@ -99,7 +99,7 @@ a:active {
 }
 
 .hero-content {
-  padding: 50px;
+  padding: 50px 0;
   margin: auto;
   margin-bottom: 20px;
 }
