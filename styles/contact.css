@@ -130,7 +130,8 @@ input {
   padding: 5px 5px;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   color: #353C47;
-  border-radius:0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 
 textarea {
@@ -141,7 +142,8 @@ textarea {
   margin-bottom: 50px;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   color: #353C47;
-  border-radius:0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 
 input[type=submit] {
@@ -160,7 +162,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background: #AE6060;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .full {
