@@ -16,4 +16,4 @@ Name | File | Description
 **PawPrints Case Study** | [pawprintscs.html](https://www.grace-te.com/pawprintscs.html) | Case study for PawPrints iOS app
 
 ## Additional Content
-/* [**LinkedIn**](http://www.linkedin.com/in/ghsieh)
+* [**LinkedIn**](http://www.linkedin.com/in/ghsieh)
