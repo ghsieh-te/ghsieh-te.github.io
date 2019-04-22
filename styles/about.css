@@ -1,0 +1,259 @@
+/* * {outline:solid 1px #f1f1f1}*/
+
+body {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #353C47;
+}
+
+@font-face {
+  font-family: "Big River Script";
+  src: url('../assets/big_river_script.otf') format('woff2');
+}
+
+h1 {
+  font-family: "Big River Script", Helvetica, Arial, sans-serif;
+  color: #353C47;
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom:5px;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 10px;
+  font-weight: normal;
+  margin-bottom:5px;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+a {
+  color: #353C47;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+a:active {
+  color: #AE6060;
+}
+
+.container {
+  display: grid;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    grid-gap: 30px;
+    align-items: center;
+}
+
+.logo {
+  margin: auto;
+  display: inline;
+  align-self: center;
+}
+
+.logo img {
+  width: 133px;
+  height: auto;
+}
+
+.menu {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.menu a {
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.menu a:hover {
+  color: #AE6060
+}
+
+.current {
+  color: #AE6060;
+}
+
+.hero-content {
+  padding: 50px 0;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.bio h1{
+  margin: auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.bio p{
+  margin: auto;
+  width: 250px;
+  padding-bottom: 50px;
+  line-height: 1.5;
+}
+
+.full {
+  display: none;
+}
+
+.medium {
+  display: none;
+}
+
+.mobile {
+  display: grid;
+}
+
+.contact {
+  margin: auto;
+}
+
+.contact h1 {
+  padding: 50px 10px;
+  align-self: center;
+}
+
+.contact-icon {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-self: center;
+}
+
+.contact-icon a{
+  transition: .2s all;
+}
+
+.contact-icon a:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+
+footer {
+  padding-left: 5vw;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 400px) {
+
+  h1 {
+    font-family: "Big River Script", Helvetica, Arial, sans-serif;
+    color: #353C47;
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom:5px;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom:5px;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: normal;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    align-items: center;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .menu a {
+      padding: 5px;
+      margin: 10px;
+      text-align: center;
+  }
+
+  .bio p{
+    margin: auto;
+    width: 375px;
+    padding-bottom: 50px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .medium {
+    display: block;
+  }
+
+  .full {
+    display: none;
+  }
+
+}
+
+@media (min-width: 800px) {
+
+  .mobile {
+    display: none;
+  }
+
+  .medium {
+    display: none;
+  }
+
+  .full {
+    display: block;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding-top: 30px;
+    align-items: center;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .bio p{
+    margin: auto;
+    width: 700px;
+    padding-bottom: 50px;
+  }
+
+}
