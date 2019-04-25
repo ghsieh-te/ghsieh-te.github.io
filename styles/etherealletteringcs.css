@@ -11,8 +11,8 @@ body {
 }
 
 @font-face {
-  font-family: "SF Pro Text";
-  src: url('../assets/SF-Pro-Display-Regular.otf') format('woff2');
+  font-family: "Minion Pro";
+  src: url('../assets/MinionPro-Regular.otf') format('woff2');
 }
 
 h1 {
@@ -113,6 +113,7 @@ a:active {
 .intro {
   display: grid;
   margin: auto;
+  padding-top: 20px;
 }
 
 .intro h2 {
@@ -233,8 +234,17 @@ a:active {
 .competitor-image {
   display: grid;
   margin: auto;
-  height: 40px;
+  height: 100px;
   width: auto;
+  padding-bottom: 30px;
+}
+
+.competitor-image-minted {
+  display: grid;
+  margin: auto;
+  height: auto;
+  width: 50vw;
+  max-width: 200px;
   padding-bottom: 30px;
 }
 
@@ -248,7 +258,7 @@ a:active {
 
 .logo-design img{
   display: grid;
-  max-width: 275px;
+  max-width: 250px;
   height: auto;
   padding-bottom: 30px;
   margin: auto;
@@ -276,44 +286,50 @@ a:active {
 
 .palette h3:nth-of-type(1) {
   color: #FFFFFF;
-  border: 1px solid #053782;
-  background-color: #053782;
+  border: 1px solid #625D70;
+  background-color: #625D70;
 }
 
 .palette h3:nth-of-type(2) {
   color: #FFFFFF;
-  border: 1px solid #3F6BAD;
-  background-color: #3F6BAD;
+  border: 1px solid #333333;
+  background-color: #333333;
 }
 
 .palette h3:nth-of-type(3) {
-  color: #737373;
-  border: 1px solid #BAC8DC;
-  background-color: #BAC8DC;
+  color: #333333;
+  border: 1px solid #9E9E9E;
+  background-color: #9E9E9E;
 }
 
 .palette h3:nth-of-type(4) {
-  color: #353C47;
-  border: 1px solid #353C47;
-  background-color: #FFFFFF;
+  color: #333333;
+  border: 1px solid #DDDDDD;
+  background-color: #DDDDDD;
 }
 
 .palette h3:nth-of-type(5) {
-  color: #FFFFFF;
-  border: 1px solid #4C4C4C;
-  background-color: #4C4C4C;
+  color: #333333;
+  border: 1px solid #333333;
+  background-color: #FFFFFF;
 }
 
-.palette h3:nth-of-type(6) {
-  color: #FFFFFF;
-  border: 1px solid #737373;
-  background-color: #737373;
+.font {
+  margin-top: 20px;
 }
 
-.font p{
-  font-family: "SF Pro Text", Helvetica, Arial, sans-serif;
+.font-one {
+  font-family: "Helvetica Neue";
   color: #353C47;
-  font-size: 22px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.font-two {
+  font-family: "Minion Pro";
+  color: #353C47;
+  font-size: 16px;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -321,24 +337,16 @@ a:active {
   display: grid;
   margin: auto;
   height: auto;
-  max-width: 200px;
-  padding-bottom: 30px;
-}
-
-.before-afterv2 img{
-  display: grid;
-  margin: auto;
-  height: auto;
-  max-width: 225px;
-  padding-bottom: 30px;
+  max-width: 250px;
+  padding-bottom: 40px;
 }
 
 .preftest img{
   display: grid;
   margin: auto;
   height: auto;
-  max-width: 225px;
-  padding-bottom: 20px;
+  max-width: 250px;
+  padding-bottom: 40px;
 }
 
 .contact {
@@ -496,23 +504,22 @@ footer {
     line-height: 100px;
   }
 
-  .font p{
-    font-size: 24px;
+  .font-one {
+    font-size: 20px;
+  }
+
+  .font-two {
+    font-size: 18px;
   }
 
   .before-after img{
     height: auto;
-    max-width: 300px;
-  }
-
-  .before-afterv2 img{
-    height: auto;
-    max-width: 300px;
+    max-width: 350px;
   }
 
   .preftest img{
     height: auto;
-    max-width: 300px;
+    max-width: 350px;
   }
 
   .mobile {
@@ -558,7 +565,7 @@ footer {
     grid-template-columns: auto auto;
     margin: auto;
     align-items: center;
-    grid-gap:20px;
+    grid-gap:30px;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -569,14 +576,12 @@ footer {
 
   .intro img {
     margin-left: 0;
-    max-width: 80%;
-    height: auto;
   }
 
   .intro-image img {
     max-width: 100%;
     height: auto;
-    width: 50vw;
+    width: 45vw;
   }
 
   .prototype-link {
@@ -596,7 +601,7 @@ footer {
   }
 
   .process img{
-    max-width: 750px;
+    max-width: 600px;
     padding-bottom: 30px;
   }
 
@@ -616,7 +621,7 @@ footer {
   }
 
   .logo-design img{
-    max-width: 750px;
+    max-width: 600px;
   }
 
   .palette {
@@ -634,18 +639,13 @@ footer {
   }
 
   .before-after img{
-    height: auto;
-    max-width: 600px;
-  }
-
-  .before-afterv2 img{
-    max-height: 300px;
+    max-height: 400px;
     width: auto;
   }
 
   .preftest img{
-    max-height: 300px;
-    width: auto;
+    height: auto;
+    max-width: 600px;
   }
 
 }

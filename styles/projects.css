@@ -130,6 +130,7 @@ a:active {
 
 .project-overview {
   margin: auto;
+  padding-bottom: 30px;
 }
 
 .features-image img {
@@ -284,10 +285,10 @@ footer {
 
   .project-overview {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     padding-bottom: 50px;
-    grid-gap: 20px;
+    grid-gap: 30px;
     text-align: left;
     margin: auto;
   }
