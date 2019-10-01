@@ -38,8 +38,8 @@ h4 {
 }
 
 p {
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 1.5;
   font-weight: 100;
 }
 
@@ -59,9 +59,15 @@ a:active {
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.1);
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     grid-gap: 30px;
     align-items: center;
 }
@@ -73,8 +79,8 @@ a:active {
 }
 
 .logo img {
-  width: 133px;
-  height: auto;
+  width: auto;
+  height: 40px;
 }
 
 .menu {
@@ -99,9 +105,8 @@ a:active {
 }
 
 .hero-content {
-  padding: 50px 0;
+  padding: 150px 5px 50px 5px;
   margin: auto;
-  margin-bottom: 20px;
 }
 
 .hero-content img {
@@ -183,7 +188,7 @@ footer {
   padding-bottom: 30px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
 
   h1 {
     font-family: "Big River Script", Helvetica, Arial, sans-serif;
@@ -203,12 +208,6 @@ footer {
     font-weight: normal;
     margin-bottom:5px;
     line-height: 1.2;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 100;
   }
 
   .navbar {
@@ -273,10 +272,15 @@ footer {
     margin-left: 20px;
   }
 
+  .logo img {
+    width: auto;
+    height: 30px;
+  }
+
   .navbar {
       display: grid;
       grid-template-columns: 1fr auto;
-      padding-top: 30px;
+      padding-top: 20px;
       align-items: center;
   }
 
@@ -285,7 +289,6 @@ footer {
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 50px;
     padding-bottom: 50px;
   }
 

@@ -38,8 +38,8 @@ h4 {
 }
 
 p {
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 1.5;
   font-weight: 100;
 }
 
@@ -59,9 +59,15 @@ a:active {
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.1);
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     grid-gap: 30px;
     align-items: center;
 }
@@ -73,8 +79,8 @@ a:active {
 }
 
 .logo img {
-  width: 133px;
-  height: auto;
+  width: auto;
+  height: 40px;
 }
 
 .menu {
@@ -99,7 +105,7 @@ a:active {
 }
 
 .hero-content {
-  padding: 50px 0;
+  padding: 150px 5px 50px 5px;
   margin: auto;
 }
 
@@ -144,7 +150,7 @@ a:active {
 }
 
 .features-image img {
-  max-width: 100%;
+  max-width: 200px;
   height: auto;
   /*min-width: 200px;*/
 }
@@ -158,13 +164,13 @@ a:active {
   transform: scale(1.1);
 }
 
-.project-overview-desc h2 {
+/*.project-overview-desc h2 {
   position: relative;
   padding: 12px 10px;
   left: -5%;
-}
+}*/
 
-.project-overview-desc h2::before {
+/*.project-overview-desc h2::before {
   position: absolute;
   content: "";
   width: 90%;
@@ -174,7 +180,7 @@ a:active {
   background-image: url("../assets/images/pawprints_wash.png");
   background-repeat: no-repeat;
   background-size: contain;
-}
+}*/
 
 .description {
   padding: 20px 0;
@@ -255,7 +261,7 @@ footer {
   padding-bottom: 30px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
 
   h1 {
     font-family: "Big River Script", Helvetica, Arial, sans-serif;
@@ -277,16 +283,10 @@ footer {
     line-height: 1.2;
   }
 
-  p {
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 100;
-  }
-
   .navbar {
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 30px;
+    padding-top: 20px;
     align-items: center;
   }
 
@@ -318,9 +318,9 @@ footer {
     display: block;
   }
 
-  .full {
+  /*.full {
     display: none;
-  }
+  }*/
 
   .projects h1 {
     margin: auto;
@@ -337,9 +337,17 @@ footer {
       margin: auto;
     }
 
-    .project-overview-desc h2::before {
-      width: 100%;
-      height: 100%;
+    .features-image img {
+      max-width: 300px;
+      width: 30vw;
+      height: auto;
+      min-width: 200px;
+    }
+
+    .description {
+      padding: 20px 0;
+      width: 30vw;
+      min-width: 250px;
     }
 
 }
@@ -362,10 +370,14 @@ footer {
     margin-left: 20px;
   }
 
+  .logo img {
+    width: auto;
+    height: 30px;
+  }
+
   .navbar {
     display: grid;
     grid-template-columns: 1fr auto;
-    padding-top: 30px;
     align-items: center;
   }
 
@@ -374,7 +386,7 @@ footer {
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 50px;
+    padding-top: 125px;
     padding-bottom: 50px;
   }
 
@@ -385,6 +397,10 @@ footer {
 
   .project-overview {
     margin: auto;
+  }
+
+  .features-image img {
+    max-width: 400px;
   }
 
   .case-study-link a{
